@@ -1,0 +1,29 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &_logo {
+    width: 50%;
+  }
+  img {
+    width: 40%;
+  }
+  &_nav {
+    width: 30%;
+    ul {
+      display: flex;
+      justify-content: space-between;
+      a {
+        color: $color-1;
+        font-size: 24px;
+        @media screen and (max-width: 768px) {
+          font-size: 12px;
+
+        }
+        &:hover {
+          border-bottom: solid 1px $color-1;
+        }
+      }
+    }
+  }
+}
