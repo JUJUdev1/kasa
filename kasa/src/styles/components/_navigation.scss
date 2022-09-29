@@ -1,29 +1,30 @@
 .header {
+  grid-area: headerContenair;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  &_logo {
-    width: 50%;
-  }
-  img {
-    width: 40%;
-  }
   &_nav {
-    width: 30%;
+    width: 50%;
     ul {
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-end;
+      li {
+        margin-right: 5%
+      }
       a {
-        color: $color-1;
-        font-size: 24px;
-        @media screen and (max-width: 768px) {
-          font-size: 12px;
-
-        }
+        color:$color-1;
         &:hover {
-          border-bottom: solid 1px $color-1;
+          border-bottom: 1px solid $color-1;
         }
       }
     }
   }
+  &_logo {
+    width: 50%;
+  }
+}
+
+img {
+  width: 100px;
+  height: 100px;
 }

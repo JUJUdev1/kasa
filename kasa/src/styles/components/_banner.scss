@@ -1,0 +1,16 @@
+.banner {
+    grid-area: banner;
+    background:linear-gradient(
+        rgba(65, 65, 65, 0.502),
+        rgba(65, 65, 65, 0.502)
+      ),
+      url(../media/banner.png)no-repeat center center/cover;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1 {
+        color:white;
+        margin-left: 1rem;
+    }
+}
