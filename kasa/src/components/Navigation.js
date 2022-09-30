@@ -1,15 +1,16 @@
 import { NavLink } from "react-router-dom";
+import { ReactComponent as Logo } from '../media/logo/LOGO.svg';
 
 const Navigation = () => {
   return (
     <div className="header">
       <div className="header_logo">
-        <img src="./media/logo/LOGO.svg" alt="Logo de l'entreprise" />
+        <Logo fill='red' />
       </div>
       <div className="header_nav">
         <ul>
           <li>
-            <NavLink to="/">Acceuil</NavLink>
+            <NavLink to="/">Accueil</NavLink>
           </li>
           <li>
             <NavLink to="/a-Propos">A Propos</NavLink>

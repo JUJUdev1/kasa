@@ -1,5 +1,6 @@
 $color-1 : #FF6060;
 $color-2 : #F7F7F7;
+$filter : linear-gradient(rgba(65, 65, 65, 0.502), rgba(65, 65, 65, 0.502)), ;
 
 * {
     box-sizing: border-box;
@@ -8,7 +9,7 @@ $color-2 : #F7F7F7;
 }
 
 body {
-    margin: 2% 10%;
+    margin: 0;
     padding: 0;
 }
 

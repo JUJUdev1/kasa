@@ -1,8 +1,12 @@
 .header {
-  grid-area: headerContenair;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 40px;
+svg {
+  width: 100px;
+  height: 100px;
+}
   &_nav {
     width: 50%;
     ul {
@@ -22,9 +26,4 @@
   &_logo {
     width: 50%;
   }
-}
-
-img {
-  width: 100px;
-  height: 100px;
 }
