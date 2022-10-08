@@ -1,0 +1,13 @@
+.header_nav {
+  width: 50%;
+  ul {
+    display: flex;
+    justify-content: flex-end;
+    li {
+      margin-right: 5%;
+    }
+    a {
+      color: $color-1;
+    }
+  }
+}

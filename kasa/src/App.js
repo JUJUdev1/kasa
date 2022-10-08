@@ -1,21 +1,21 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from './pages/Home';
 import About from './pages/About';
-import AccomodationsDetails from './pages/AccomodationsDetails';
+import AccomodationsCards from './pages/AccomodationsCards';
 import NotFound from './pages/NotFound';
 
 function App() {
-  return <div>
+  return <>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/a-Propos" element={<About />} />
-        <Route path="/fiche-Logement" element={<AccomodationsDetails />} />
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/a-Propos" element={<About />} />
+        <Route path="/fiche-Logement/:id" element={<AccomodationsCards />} />
         <Route path="*" element={<NotFound />} />
         <Route />
       </Routes>
     </BrowserRouter>
-  </div>;
+  </>;
 }
 
 export default App;

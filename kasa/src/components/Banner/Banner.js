@@ -1,6 +1,6 @@
-import bannerAbout from "../media/bannerAbout.png";
-import bannerHome from "../media/bannerHome.png";
-import bannerAboutMobile from "../media/bannerAboutMobile.png";
+import bannerAbout from "../../media/images/bannerAbout.png";
+import bannerHome from "../../media/images/bannerHome.png";
+import bannerAboutMobile from "../../media/images/bannerAboutMobile.png";
 
 const Banner = () => {
   return (

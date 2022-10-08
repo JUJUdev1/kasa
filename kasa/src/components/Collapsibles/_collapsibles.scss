@@ -1,0 +1,29 @@
+.collapsibles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+  &_container {
+    background: $color-1;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    color: white;
+  }
+  &_icon {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+  }
+  &_content {
+    background-color: $color-2;
+    padding: 10px;
+    color: $color-1;
+  }
+}

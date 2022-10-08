@@ -1,16 +1,16 @@
-import Navigation from "../components/Navigation";
-import Footer from "../components/Footer";
-import Banner from "../components/Banner";
-import Collapsible from '../components/Collapsibles';
+import Footer from "../components/Footer/Footer";
+import Banner from "../components/Banner/Banner";
+import Header from '../components/Header/Header';
+import AboutContents from '../components/About/AboutContent';
 
 const About = () => {
   return (
-    <div>
-      <Navigation />
+    <>
+      <Header />
       <Banner />
-      <Collapsible />
+      <AboutContents />
       <Footer />
-    </div>
+    </>
   );
 };
 

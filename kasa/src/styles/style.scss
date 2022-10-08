@@ -1,11 +1,25 @@
 @import "./settings";
-@import "./pages/about";
-@import "./pages/home";
-@import "./pages/notFound";
-@import "./pages/accomodationsDetails";
-@import "./components/navigation";
-@import "./components/banner";
-@import "./components/accomodationCard";
-@import "./components/footer";
-@import "./components/collapsibles";
 
+@import "./pages/notFound";
+
+
+@import "../components/Collapsibles/collapsibles";
+
+@import "../components/Banner/banner";
+
+@import "../components/Header/components/navigation";
+@import "../components/Header/header";
+@import "../components/Header/components/logo";
+
+@import "../components/Footer/footer";
+
+@import "../components/Accomodations/components/accomodation";
+@import "../components/Accomodations/accomodations";
+
+@import "../components/About/about";
+
+@import "../components/CardsDetails/components/imageSlider";
+@import "../components/CardsDetails/cardDetails";
+@import "../components/CardsDetails/components/host";
+@import "../components/CardsDetails/components/tag";
+@import "../components/CardsDetails/components/rating";

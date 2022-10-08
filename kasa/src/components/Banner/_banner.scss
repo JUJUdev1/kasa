@@ -14,12 +14,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 200px;
   min-height: 100px;
   margin: 40px;
-  @media screen and (max-width: 768px) {
-    height: auto;
-  }
   h1 {
     color: white;
     margin-left: 1rem;

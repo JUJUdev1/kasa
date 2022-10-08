@@ -1,0 +1,46 @@
+.contenairSlide {
+  width: 100%;
+  padding: 0px 40px;
+
+  img {
+    object-fit: cover;
+    height: 300px;
+    border-radius: 10px;
+  }
+}
+
+.slick-next {
+        border: solid white;
+        border-width: 0 5px 5px 0;
+        display: inline-block;
+        padding: 15px;
+        right: 30px;
+        top: 50%;
+        transform: rotate(-45deg);
+        @media screen and (max-width: 768px) {
+            padding: 5px;
+            border-width: 0 2px 2px 0;
+        }
+        &::before{
+            content: '';
+        }
+        
+      
+}
+.slick-prev {
+    border: solid white;
+        border-width: 0 5px 5px 0;
+        display: inline-block;
+        padding: 15px;
+        z-index: 1;
+        transform: rotate(135deg);
+        left: 30px;
+        top: 50%;
+        @media screen and (max-width: 768px) {
+            padding: 5px;
+            border-width: 0 2px 2px 0;
+        }
+    &::before{
+        content: '';
+    }
+}

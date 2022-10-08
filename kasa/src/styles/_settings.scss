@@ -2,6 +2,8 @@ $color-1 : #FF6060;
 $color-2 : #F7F7F7;
 $filter : linear-gradient(rgba(65, 65, 65, 0.502), rgba(65, 65, 65, 0.502)), ;
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -11,6 +13,7 @@ $filter : linear-gradient(rgba(65, 65, 65, 0.502), rgba(65, 65, 65, 0.502)), ;
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
 li {
@@ -27,3 +30,17 @@ h1 {
     font-size: 24px;
    }
    }
+
+h2 {
+    font-size: 36px;
+    @media screen and (max-width: 768px) {
+        font-size: 18px;
+    }
+}
+
+h3 {
+    font-size: 24px;
+    @media screen and (max-width: 768px) {
+        font-size: 12px;
+    }
+}
