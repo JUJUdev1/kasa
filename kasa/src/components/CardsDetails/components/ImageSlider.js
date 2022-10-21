@@ -1,25 +1,43 @@
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import React, { useState } from "react";
 
-function ImageSlider(props) {
-  let settings = {
-    duration: 5000,
-    transitionDuration: 500,
-    arrows: true,
-    infinite: true,
-    indicators: true,
-    numbers: true,
-  };
+const ImageSlider = ({ pictures }) => {
+  const [currentPicture, setCurrentPicture] = useState(0);
+  const arrayPicturesLength = pictures.length;
+
+  function nextPicture() {
+    setCurrentPicture(
+      currentPicture === arrayPicturesLength - 1 ? 0 : currentPicture + 1
+    );
+  }
+
+  function prevPicture() {
+    setCurrentPicture(
+      currentPicture === 0 ? arrayPicturesLength - 1 : currentPicture - 1
+    );
+  }
+
+  const hasMultiplePictures = arrayPicturesLength > 1;
+
   return (
-    <div className="contenairSlide">
-      <Slider {...settings}>
-        {props.pictures.map((picture) => (
-          <img src={picture} key={picture} />
-        ))}
-      </Slider>
+    <div className="imageSlider">
+      <img src={pictures[currentPicture]} alt="images" />
+
+      {hasMultiplePictures && (
+        <div className="arrow-left" onClick={prevPicture} ></div>
+      )}
+
+      {hasMultiplePictures && (
+        <div className="arrow-right" onClick={nextPicture}> </div>
+      )}
+      {hasMultiplePictures && (
+        <p
+          className="imageSlider_counter"
+        >
+          {currentPicture + 1} / {arrayPicturesLength}
+        </p>
+      )}
     </div>
   );
-}
+};
 
 export default ImageSlider;

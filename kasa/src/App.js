@@ -4,6 +4,7 @@ import About from './pages/About';
 import AccomodationsCards from './pages/AccomodationsCards';
 import NotFound from './pages/NotFound';
 
+
 function App() {
   return <>
     <BrowserRouter>

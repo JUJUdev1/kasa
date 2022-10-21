@@ -8,7 +8,7 @@ import Tag from "./components/Tag";
 import Rating from "./components/Rating";
 
 const AccomodationCard = () => {
-  const [accomodations, setAccomodations] = useState(accomodationsData);
+  const [accomodations] = useState(accomodationsData);
   const idAccomodotion = useParams();
   const accomodationID = accomodations.find(
     (accomodation) => accomodation.id === idAccomodotion.id

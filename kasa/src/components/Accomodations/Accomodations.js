@@ -3,7 +3,7 @@ import accomodationsData from "../../data/AnnoncesData";
 import Accomodation from "./components/Accomodation";
 
 const Accomodations = () => {
-  const [accomodations, setAccomodations] = useState(accomodationsData);
+  const [accomodations] = useState(accomodationsData);
   return (
     <div className="accomodations">
       {accomodations.map((accomodation) => {
